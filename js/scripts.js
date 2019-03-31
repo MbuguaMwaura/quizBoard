@@ -91,3 +91,9 @@ $(document).ready(function () {
 
     });
 });
+
+function goback(){
+    $("#blur").removeClass("blur");
+    $("#blur").removeClass("position");
+    $("#results").hide();
+}
