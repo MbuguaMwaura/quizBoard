@@ -29,97 +29,100 @@
             </div>
             <button class="btn btn-success" id="quizOne" onclick="start()">Start</button>
         </div>
-        <div class="quiz">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>
-                        <p>What does JavaScript add to a HTML page?</p>
-                    </h3>
+        <div id="quiz">
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            <p>What does JavaScript add to a HTML page?</p>
+                        </h3>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        
+                            <label for="choices">A. Adds styling.
+                                <br>B. Adds interactivity. <br>C. Adds content to the HTML page.
+                                <br>D. None of the above. </label>
+                            <input type="text" class="form-control" id="one">
+                        
+                    </div>
                 </div>
 
-
-                <div class="col-md-6">
-                    <form id="answer">
-                        <label for="choices">A. Adds styling.
-                            <br>B. Adds interactivity. <br>C. Adds content to the HTML page.
-                            <br>D. None of the above. </label>
-                        <input type="text" class="form-control" id="one">
-                    </form>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>
-                        <p>What file extention does JavaScript code file use?</p>
-                    </h3>
-                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            <p>What file extention does JavaScript code file use?</p>
+                        </h3>
+                    </div>
 
 
-                <div class="col-md-6">
-                    <form id="answer">
-                        <label for="choices">A. .html
-                            <br>B. .css <br>C. .js
-                            <br>D. .jst </label>
-                        <input type="text" class="form-control" id="two">
-                    </form>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>
-                        <p>Which of the following attribute is used to include external JS code inside your HTML
-                            Document.</p>
-                    </h3>
+                    <div class="col-md-6">
+                       
+                            <label for="choices">A. .html
+                                <br>B. .css <br>C. .js
+                                <br>D. .jst </label>
+                            <input type="text" class="form-control" id="two">
+                      
+                    </div>
                 </div>
 
-
-                <div class="col-md-6">
-                    <form id="answer">
-                        <label for="choices">A. link.
-                            <br>B. ext. <br>C. src.
-                            <br>D. script. </label>
-                        <input type="text" class="form-control" id="three">
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>
-                        <p>JavaScript is ______ Side scripting language.</p>
-                    </h3>
-                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            <p>Which of the following attribute is used to include external JS code inside your HTML
+                                Document.</p>
+                        </h3>
+                    </div>
 
 
-                <div class="col-md-6">
-                    <form id="answer">
-                        <label for="choices">A. Server.
-                            <br>B. Client. <br>C. ISP.
-                            <br>D. Browser. </label>
-                        <input type="text" class="form-control" id="four">
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>
-                        <p>JavaScript code between a pair of “script” tags are called</p>
-                    </h3>
+                    <div class="col-md-6">
+                        
+                            <label for="choices">A. link.
+                                <br>B. ext. <br>C. src.
+                                <br>D. script. </label>
+                            <input type="text" class="form-control" id="three">
+                        
+                    </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            <p>JavaScript is ______ Side scripting language.</p>
+                        </h3>
+                    </div>
 
-                <div class="col-md-6">
-                    <form id="answer">
-                        <label for="choices">A. Non-inline.
-                            <br>B. External. <br>C. Referenced.
-                            <br>D. Inline. </label>
-                        <input type="text" class="form-control" id="five">
-                    </form>
+                    <div class="col-md-6">
+                        
+                            <label for="choices">A. Server.
+                                <br>B. Client. <br>C. ISP.
+                                <br>D. Browser. </label>
+                            <input type="text" class="form-control" id="four">
+                        
+                    </div>
                 </div>
-            </div>
-            <button class="btn btn-danger" onclick="done()">done</button>
-            <input id="hidden" type="submit" class="btn">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            <p>JavaScript code between a pair of “script” tags are called</p>
+                        </h3>
+                    </div>
+
+
+                    <div class="col-md-6">
+                      
+                            <label for="choices">A. Inline.
+                                <br>B. External. <br>C. Referenced.
+                                <br>D. Non-inline. </label>
+                            <input type="text" class="form-control" id="five">
+                       
+                    </div>
+                </div>
+                <button class="btn btn-danger" onclick="done()">done</button>
+                <input id="hidden" type="submit" class="btn">
+            </form>
         </div>
        
     </div>
