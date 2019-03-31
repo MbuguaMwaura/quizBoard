@@ -56,23 +56,38 @@ $(document).ready(function () {
             $("input#five").addClass("red")
         }
 
-
+        $("#blur").addClass("blur");
+        $("#blur").addClass("position");
 
         event.preventDefault();
+
+        $("#results").show();
+
+        var score = 0;
+
+        if (questionOne === "B") {
+            score++;
+        }
+        if (questionTwo === "C") {
+            score++;
+        }
+        if (questionThree === "D") {
+            score++;
+        }
+        if (questionFour === "D") {
+            score++;
+        }
+        if (questionFive === "A") {
+            score++;
+        }
+
+
+        var percent = score / 2 * 100;
+
+        document.getElementById("score").innerHTML = score;
+
+
 
 
     });
 });
-
-var score = 0;
-
-if (Q1 === "A") {
-    score++;
-}
-if (Q2 === "B") {
-    score++;
-}
-
-var percent = score / 2 * 100;
-
-document.getElementById("marks").innerHTML = percent
