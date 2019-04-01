@@ -18,6 +18,14 @@ function done() {
     event.preventDefault();
 }
 
+function goback() {
+    $("#blur").removeClass("blur");
+    $("#blur").removeClass("position");
+    $("#results").hide();
+}
+
+
+
 $(document).ready(function () {
     $("#quiz form").submit(function (event) {
         var questionOne = $("input#one").val().toUpperCase();
@@ -82,7 +90,7 @@ $(document).ready(function () {
             score++;
         }
 
-        document.getElementById("score").innerHTML = score;
+        document.getElementById("score").innerHTML = + score + " which is:";
 
 
         var percentage = (score / 5) * percent;
@@ -90,15 +98,15 @@ $(document).ready(function () {
 
 
 
-        if ((percent >= 80) && (percent < 100)) {
-            document.getElementById("message").innerHTML = +percentage + "%. Which is AMAZING. Keep it up!";
+        if ((percent >= 80) && (percent <= 100)) {
+            document.getElementById("message").innerHTML = +percentage + "%. AMAZING. Keep it up!";
         }
 
         if ((percent >= 50) && (percent < 80)) {
             document.getElementById("message").innerHTML = +percentage + "%. You have passed fairly!";
         }
 
-        if (percent >= 50) {
+        if (percent < 50) {
             document.getElementById("message").innerHTML = +percentage + "%. You have not passed. Please re-take the test.";
         }
 
@@ -107,8 +115,3 @@ $(document).ready(function () {
     });
 });
 
-function goback() {
-    $("#blur").removeClass("blur");
-    $("#blur").removeClass("position");
-    $("#results").hide();
-}
