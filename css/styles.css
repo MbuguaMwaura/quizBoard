@@ -32,7 +32,7 @@
 #results {
     display: none;
     color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 128, 0, 0.4);
     transform: translate(-50%, -50%);
     left: 50%;
     width: 50%;
@@ -40,6 +40,11 @@
     z-index: 2;
     position: absolute;
     text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+#results p{
+    font-size: 15px;
 }
 
 .position {
