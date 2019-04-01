@@ -90,7 +90,7 @@ $(document).ready(function () {
             score++;
         }
 
-        document.getElementById("score").innerHTML = + score + " which is:";
+        document.getElementById("score").innerHTML = +score + " which is:";
 
 
         var percentage = (score / 5) * percent;
@@ -98,15 +98,15 @@ $(document).ready(function () {
 
 
 
-        if ((percent >= 80) && (percent <= 100)) {
+        if ((percentage >= 80) && (percentage <= 100)) {
             document.getElementById("message").innerHTML = +percentage + "%. AMAZING. Keep it up!";
         }
 
-        if ((percent >= 50) && (percent < 80)) {
+        if ((percentage >= 50) && (percentage < 80)) {
             document.getElementById("message").innerHTML = +percentage + "%. You have passed fairly!";
         }
 
-        if (percent < 50) {
+        if (percentage < 50) {
             document.getElementById("message").innerHTML = +percentage + "%. You have not passed. Please re-take the test.";
         }
 
@@ -114,4 +114,3 @@ $(document).ready(function () {
 
     });
 });
-
