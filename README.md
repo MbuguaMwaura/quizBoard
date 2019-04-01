@@ -1,4 +1,5 @@
 # Quiz Board Project
+https://mbuguamwaura.github.io/quizBoard/
 
 This is a web page that contains a quiz on Javascript. Users can take the quiz and get graded based on their responses.
 
@@ -33,7 +34,7 @@ There are no known bugs.
 
 ## Deployment
 
-The project has been deployed using gh-pages. The link is: ()
+The project has been deployed using gh-pages. The link is: (https://mbuguamwaura.github.io/quizBoard/)
 
 
 ## Authors
