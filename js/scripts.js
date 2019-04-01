@@ -64,7 +64,7 @@ $(document).ready(function () {
         $("#results").show();
 
         var score = 0;
-        var percent = 0;
+        var percent = 100;
 
         if (questionOne === "B") {
             score++;
@@ -82,21 +82,24 @@ $(document).ready(function () {
             score++;
         }
 
-
-        percent = (score / 10) * 100;
-
         document.getElementById("score").innerHTML = score;
 
-        if ((percent >= 80)&&(percent < 100)){
-            document.getElementById("message").innerHTML = + percent + "%. Which is AMAZING. Keep it up!";
+
+        var percentage = (score / 5) * percent;
+
+
+
+
+        if ((percent >= 80) && (percent < 100)) {
+            document.getElementById("message").innerHTML = +percentage + "%. Which is AMAZING. Keep it up!";
         }
 
-        if ((percent >= 50)&&(percent < 80)){
-            document.getElementById("message").innerHTML = + percent + "%. You have passed fairly!";
+        if ((percent >= 50) && (percent < 80)) {
+            document.getElementById("message").innerHTML = +percentage + "%. You have passed fairly!";
         }
 
-        if (percent >= 50){
-            document.getElementById("message").innerHTML = + percent + "%. You have not passed. Please re-take the test.";
+        if (percent >= 50) {
+            document.getElementById("message").innerHTML = +percentage + "%. You have not passed. Please re-take the test.";
         }
 
 
@@ -104,7 +107,7 @@ $(document).ready(function () {
     });
 });
 
-function goback(){
+function goback() {
     $("#blur").removeClass("blur");
     $("#blur").removeClass("position");
     $("#results").hide();
